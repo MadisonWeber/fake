@@ -2,6 +2,7 @@ import Fun from "./components/Fun"
 import { useState } from 'react'
 import CounterDisplay from './components/CounterDisplay'
 import ThirdDisplay from './components/ThirdDisplay'
+import Four from './components/Four'
 import './App.css';
 
 
@@ -18,6 +19,7 @@ function App() {
           <CounterDisplay />
           <Fun />
           <ThirdDisplay />
+          <Four />
         </>
   );
 }
