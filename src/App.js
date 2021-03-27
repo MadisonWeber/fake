@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import Fun from "./components/Fun"
+import { useState } from 'react'
 import './App.css';
+import CounterDisplay from './components/CounterDisplay'
+
 
 function App() {
+
+
+  const [ fromFirst, setFromFirst ] = useState(true)
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <>
+          { fromFirst && <h1>This is the first Branch</h1>}
+          <p>hello</p>
+          <CounterDisplay />
+          <Fun />
+        </>
   );
 }
 
